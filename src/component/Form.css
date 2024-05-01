@@ -1,0 +1,70 @@
+input {
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+label {
+  font-size: 12px;
+  color: gray;
+}
+
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px; /* Adjust as needed */
+}
+
+input {
+  padding-left: 30px; /* Adjust according to icon size and position */
+}
+.form {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px; /* Adjust as needed */
+}
+span {
+  display: none;
+  font-size: 5px;
+  padding: 3px;
+}
+
+input:invalid ~ span {
+  display: block;
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="datetime-local"],
+.form select {
+  padding: 15px 15px 15px 28px; /* Sets the padding for input and select elements */
+  margin: 10px 0px; /* Sets the margin for input and select elements */
+}
